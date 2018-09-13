@@ -28,7 +28,9 @@
 html{
     background-color: rgb(180, 169, 13);
 }
-
+body{
+    background-color: red;
+}
 
 aside h1{
 font-size: 1.3em;
@@ -62,6 +64,12 @@ section#leftcol aside h1{
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+section#leftcol aside:first-of-type{
+    background-color: rgb(50, 30, 80);
+}
+section#leftcol aside:nth-of-type(2){
+    background-color: pink;
+}
 /* section#leftcol p:first-of-type::first-letter{
     font-size:1.5em;
     font-family: 'New Times Roman', cursive;
@@ -71,7 +79,6 @@ section#leftcol aside h1{
 section#rightcol{
     background-color: rgb(216, 95, 216);
     font-size: 1.2em;
-    margin-bottom: 30px;
 }
 section#rightcol h2{
     font-family: DobkinPlain;
@@ -87,6 +94,9 @@ section#rightcol>nav a:active,
 section#rightcol>nav a:hover{
     color:rgb(150, 20, 30);
 }
+section#rightcol nav{
+    font-size: 0.8em;
+}
 /* Footer */
 footer{
     background-color: maroon;
@@ -94,3 +104,15 @@ footer{
     text-align: center;
 }
 /* Blockquotes */
+section#rightcol blockquote::before{
+    content: open-quote;
+    color: red;
+    font-family: DobkinPlain;
+    font-size:2em;
+}
+section#rightcol blockquote::after{
+    content: close-quote;
+    color: red;
+    font-family:DobkinPlain;
+    font-size: 2em;
+}
