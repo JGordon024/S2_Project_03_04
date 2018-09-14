@@ -26,11 +26,12 @@
 }
 
 html {
-    background-color: rgb(146, 146, 31);
+    background-color: rgb(255, 222, 25);
 }
 
 body {
-    background-color: rgb(146, 146, 31);
+
+    background-color:rgb(245, 245, 105) ;
 }
 
 aside h1 {
@@ -78,6 +79,7 @@ section#leftcol aside:first-of-type {
 /* This effects the second aside element in the section#left col element, the background is changed */
 section#leftcol aside:nth-of-type(2) {
     background-color: pink;
+    text-align: center;
 }
 
 /* Sectioning ID rightcol */
@@ -114,16 +116,16 @@ section#rightcol>nav li {
 
 /* Footer Styles */
 footer {
-    background-color: maroon;
-    color: red;
-    text-align: center;
+    background-color: rgb(253, 177, 4);
+    color:black;
+     text-align: center;
 }
 
 /* Blockquotes Styles */
 blockquote {
     margin: 20px 5px;
-    quotes: "\201C""\201D";
-    color: purple;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    color: rgb(57, 25, 146);
 }
 
 blockquote::before {
