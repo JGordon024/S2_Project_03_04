@@ -49,29 +49,30 @@ header>nav a:visited {
     color: rgb(50, 30, 50);
     text-decoration: none;
 }
-
+/*  */
 header>nav a:active,
 header>nav a:hover {
     background-color: hsla(184, 89%, 45%, 0.3);
 }
 
 /* Sectioning Element Left Column */
+/*All h1 elements nested in the section are being set to 3em and the font family set, the margin set, and the text aligned to the center */
 section h1 {
     font-size: 3em;
     font-family: champagne, cursive;
     margin: 5px;
     text-align: center;
 }
-
+/* The background color for the section#leftcol is set */
 section#leftcol {
     background-color: rgb(249, 253, 186);
 }
-
+/* The font size of the h1 elements nested inside of the aside element which is within the section#leftcol is being set to 2em and the font family is set */
 section#leftcol aside h1 {
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/* The first aside in the section#leftcol element is being set to a different background than the section#leftcol */
 section#leftcol aside:first-of-type {
     background-color: rgb(255, 208, 0);
 }
@@ -83,38 +84,40 @@ section#leftcol aside:nth-of-type(2) {
 }
 
 /* Sectioning ID rightcol */
+/* All font in the section#rightcol is being set to 1.2 and is being aligned in the center*/
 section#rightcol {
     font-size: 1.2em;
     text-align: center;
 }
-
+/* The font family, font size, and the text is aligned for all h2 elements nested within the section#rightcol */
 section#rightcol h2 {
     font-family: DobkinPlain;
     font-size: 2em;
     text-align: center;
 }
-
+/* The links in the right column are set to a darker color and have removed the line */
 section#rightcol>nav a:link,
 section#rightcol>nav a:visited {
     color: rgb(60, 30, 80);
     text-decoration: none;
 }
-
+/* When hovered above by the mouse, the link is turned to a dark red and it increases in size */
 section#rightcol>nav a:active,
 section#rightcol>nav a:hover {
     color: rgb(150, 20, 30);
     font-size: 1.5em;
 }
-
+/* Sets the size of the links in the navigation in the section right column to 0.8 */
 section#rightcol nav {
     font-size: 0.8em;
 }
-
+/* This removes the closed disc next to the nav list placed inside the right column section */
 section#rightcol>nav li {
     list-style-type: none;
 }
 
 /* Footer Styles */
+/* Sets teh background color to a creamy color, the text to black, and aligns the text to the center */
 footer {
     background-color: rgb(253, 177, 4);
     color:black;
@@ -122,19 +125,20 @@ footer {
 }
 
 /* Blockquotes Styles */
+/* Sets the color of the blockquote and the margin, as well as how to set the quotations*/
 blockquote {
     margin: 20px 5px;
     quotes: "\201C" "\201D" "\2018" "\2019";
     color: rgb(57, 25, 146);
 }
-
+/* Opens the quote at the beginning of the blockquote */
 blockquote::before {
     content: open-quote;
     font-size: 2em;
     opacity: 0.4;
     font-family: champagne;
 }
-
+/* Closes the quote at the end of the blockquote */
 blockquote::after {
     content: close-quote;
     font-size: 2em;
