@@ -25,94 +25,117 @@
         url('DobkinPlain.ttf') format('truetype');
 }
 
-html{
-    background-color: rgb(180, 169, 13);
-}
-body{
-    background-color: red;
+html {
+    background-color: rgb(146, 146, 31);
 }
 
-aside h1{
-font-size: 1.3em;
+body {
+    background-color: rgb(146, 146, 31);
 }
-header>nav{
+
+aside h1 {
+    font-size: 1.3em;
+}
+
+header>nav {
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(223, 130, 223);
+    background-color: rgb(149, 81, 77);
 }
+
 header>nav a:link,
 header>nav a:visited {
     color: rgb(50, 30, 50);
     text-decoration: none;
 }
+
 header>nav a:active,
-header>nav a:hover{
+header>nav a:hover {
     background-color: hsla(184, 89%, 45%, 0.3);
 }
-/* Sectioning Element */
-section h1{
+
+/* Sectioning Element Left Column */
+section h1 {
     font-size: 3em;
     font-family: champagne, cursive;
-margin: 5px;
-text-align: center;
+    margin: 5px;
+    text-align: center;
 }
 
-section#leftcol{
-    background-color: rgb(108, 96, 150);
+section#leftcol {
+    background-color: rgb(249, 253, 186);
 }
-section#leftcol aside h1{
+
+section#leftcol aside h1 {
     font-size: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-section#leftcol aside:first-of-type{
-    background-color: rgb(50, 30, 80);
+
+section#leftcol aside:first-of-type {
+    background-color: rgb(255, 208, 0);
 }
-section#leftcol aside:nth-of-type(2){
+
+/* This effects the second aside element in the section#left col element, the background is changed */
+section#leftcol aside:nth-of-type(2) {
     background-color: pink;
 }
-/* section#leftcol p:first-of-type::first-letter{
-    font-size:1.5em;
-    font-family: 'New Times Roman', cursive;
-} */
 
 /* Sectioning ID rightcol */
-section#rightcol{
-    background-color: rgb(216, 95, 216);
+section#rightcol {
     font-size: 1.2em;
+    text-align: center;
 }
-section#rightcol h2{
+
+section#rightcol h2 {
     font-family: DobkinPlain;
     font-size: 2em;
     text-align: center;
 }
+
 section#rightcol>nav a:link,
-section#rightcol>nav a:visited{
+section#rightcol>nav a:visited {
     color: rgb(60, 30, 80);
     text-decoration: none;
 }
+
 section#rightcol>nav a:active,
-section#rightcol>nav a:hover{
-    color:rgb(150, 20, 30);
+section#rightcol>nav a:hover {
+    color: rgb(150, 20, 30);
+    font-size: 1.5em;
 }
-section#rightcol nav{
+
+section#rightcol nav {
     font-size: 0.8em;
 }
-/* Footer */
-footer{
+
+section#rightcol>nav li {
+    list-style-type: none;
+}
+
+/* Footer Styles */
+footer {
     background-color: maroon;
     color: red;
     text-align: center;
 }
-/* Blockquotes */
-section#rightcol blockquote::before{
-    content: open-quote;
-    color: red;
-    font-family: DobkinPlain;
-    font-size:2em;
+
+/* Blockquotes Styles */
+blockquote {
+    margin: 20px 5px;
+    quotes: "\201C""\201D";
+    color: purple;
 }
-section#rightcol blockquote::after{
-    content: close-quote;
-    color: red;
-    font-family:DobkinPlain;
+
+blockquote::before {
+    content: open-quote;
     font-size: 2em;
+    opacity: 0.4;
+    font-family: champagne;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    opacity: 0.4;
+    font-family: champagne;
 }
